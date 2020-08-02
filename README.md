@@ -1,6 +1,6 @@
 # react-admin [![Build Status](https://travis-ci.org/marmelab/react-admin.svg?branch=master)](https://travis-ci.org/marmelab/react-admin) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmarmelab%2Freact-admin.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmarmelab%2Freact-admin?ref=badge_shield)
 
-Một Khung giao diện cho việc xây dựng ứng dụng data-driven điều khiển dữ liệu chạy trên trình duyệt trên cácREST/GraphQL APIs, sử dụng ES6, [React](https://facebook.github.io/react/) and [Material Design](https://material.io/). Previously named [admin-on-rest](https://github.com/marmelab/admin-on-rest). Open sourced and maintained by [marmelab](https://marmelab.com/).
+Một Khung giao diện cho việc xây dựng ứng dụng data-driven điều khiển dữ liệu chạy trên trình duyệt trên các REST/GraphQL APIs, sử dụng ES6, [React](https://facebook.github.io/react/) and [Material Design](https://material.io/). Previously named [admin-on-rest](https://github.com/marmelab/admin-on-rest). Open sourced and maintained by [marmelab](https://marmelab.com/).
 
 [Home page](https://marmelab.com/react-admin/) - [Documentation](https://marmelab.com/react-admin/Tutorial.html) - [Demo](https://marmelab.com/react-admin-demo/) - [Blog](https://marmelab.com/en/blog/#react-admin) - [Releases](https://github.com/marmelab/react-admin/releases) - [Support](http://stackoverflow.com/questions/tagged/react-admin)
 
@@ -201,7 +201,7 @@ Both of these examples work without server - the API is simulated on the client-
 
 ### Testing Your Changes In Your App
 
-Using `yarn link`, you can have your project use a local checkout of the react-admn package instead of npm. This allows you to test react-admin changes in your app: 
+Sử dụng `yarn link`, bạn có thể yêu cầu dự án của bạn sử dụng một local checkout của gói react-admn package thay vì npm. Điều này cho phép bạn test react-admin thay đổi trên app của bạn: 
 
 ```sh
 # Register your local react-admin as a linkable package

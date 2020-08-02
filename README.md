@@ -1,6 +1,6 @@
 # react-admin [![Build Status](https://travis-ci.org/marmelab/react-admin.svg?branch=master)](https://travis-ci.org/marmelab/react-admin) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmarmelab%2Freact-admin.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmarmelab%2Freact-admin?ref=badge_shield)
 
-A frontend Framework for building data-driven applications running in the browser on top of REST/GraphQL APIs, using ES6, [React](https://facebook.github.io/react/) and [Material Design](https://material.io/). Previously named [admin-on-rest](https://github.com/marmelab/admin-on-rest). Open sourced and maintained by [marmelab](https://marmelab.com/).
+Một Khung giao diện cho việc xây dựng ứng dụng data-driven điều khiển dữ liệu chạy trên trình duyệt trên cácREST/GraphQL APIs, sử dụng ES6, [React](https://facebook.github.io/react/) and [Material Design](https://material.io/). Previously named [admin-on-rest](https://github.com/marmelab/admin-on-rest). Open sourced and maintained by [marmelab](https://marmelab.com/).
 
 [Home page](https://marmelab.com/react-admin/) - [Documentation](https://marmelab.com/react-admin/Tutorial.html) - [Demo](https://marmelab.com/react-admin-demo/) - [Blog](https://marmelab.com/en/blog/#react-admin) - [Releases](https://github.com/marmelab/react-admin/releases) - [Support](http://stackoverflow.com/questions/tagged/react-admin)
 
@@ -75,7 +75,7 @@ render(
 );
 ```
 
-The `<Resource>` component is a configuration component that allows to define sub components for each of the admin view: `list`, `edit`, and `create`. These components use Material UI and custom components from react-admin:
+component `<Resource>` là một component cấu hình cho phép xác định các component con cho mỗi chế độ xem  của quản trị viên: `list`, `edit`, and `create`. Những component này sử dụng Material UI và các components  tùy chỉnh từ react-admin:
 
 ```jsx
 // in posts.js
@@ -128,35 +128,35 @@ export const PostCreate = (props) => (
 );
 ```
 
-## Does It Work With My API?
+## Nó có hoạt động với API của tôi không ?
 
-Yes.
+Có.
 
-React-admin uses an adapter approach, with a concept called *Data Providers*. Existing providers can be used as a blueprint to design your API, or you can write your own Data Provider to query an existing API. Writing a custom Data Provider is a matter of hours.
+React-admin sử dụng một cách tiếp cận bộ chuyển đổi adapter, với một khái niệm gọi là *Data Providers*. Các nhà cung cấp có thể sử dụng như là một bản vẻ thiết kế để design API của bạn, hoặc bạn có thể viết riêng Data Provider để truy vấn một API đang tồn tại. Viết một Data Provider tùy chỉnh là vấn đề thời gian.
 
 ![Data Provider architecture](https://marmelab.com/react-admin/img/data-provider.png)
 
-See the [Data Providers documentation](https://marmelab.com/react-admin/DataProviders.html) for details.
+Xem chi tiết Data Providers [Data Providers documentation](https://marmelab.com/react-admin/DataProviders.html) 
 
-## Batteries Included But Removable
+## Những viên PIN được bao gồm nhưng có thể tháo rời
 
-React-admin is designed as a library of loosely coupled React components built on top of [material-ui](https://material-ui.com/), in addition to controller functions implemented the Redux way. It is very easy to replace one part of react-admin with your own, e.g. to use a custom datagrid, GraphQL instead of REST, or bootstrap instead of Material Design.
+React-admin được thiết kế là một thư viện lỏng lẻo gồm các thành phần ghép rời đựa trên [material-ui](https://material-ui.com/), thêm vào đó là các chức năng điều khiển thực hiện theo cách Redux. Nó rất dễ dàng để thay thế một thành phần của react-admin với custom của riêng bạn, ví dụ để sử dụng một custom datagrid, GraphQL instead of REST, hoặc bootstrap thay cho Material Design.
 
-## Examples
+## Ví dụ
 
-There are several examples inside the `examples` folder:
+Có một số ví dụ trong thư mục `examples`:
 
-* `simple` ([CodeSandbox](https://codesandbox.io/s/github/marmelab/react-admin/tree/master/examples/simple)): a simple application with posts, comments and users that we use for our e2e tests.
-* `tutorial` ([CodeSandbox](https://codesandbox.io/s/github/marmelab/react-admin/tree/master/examples/tutorial)): the application built while following the tutorial.
-* `demo`: ([Live](https://marmelab.com/react-admin-demo/)) A fictional poster shop admin, serving as the official react-admin demo.
+* `simple` ([CodeSandbox](https://codesandbox.io/s/github/marmelab/react-admin/tree/master/examples/simple)): Một ứng dụng đơn giản với posts, comments và users mà chúng tôi sử dụng cho e2e tests.
+* `tutorial` ([CodeSandbox](https://codesandbox.io/s/github/marmelab/react-admin/tree/master/examples/tutorial)): ứng dụng được xây dụng khi làm theo hướng dẫn
+* `demo`: ([Live](https://marmelab.com/react-admin-demo/)) Một shop admin của 1 cửa hàng giả lập, sử dụng như là react-admin demo bản chính thức.
 
-You can run those example applications by calling:
+Bạn có thể chạy những ví dụ bằng cách gọi:
 
 ```sh
-# At the react-admin project root
+# Tại thư mục gốc của react-admin
 make install
 
-# or
+# hoặc
 yarn install
 
 # Run the simple application
